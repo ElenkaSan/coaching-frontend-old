@@ -11,6 +11,7 @@ import {
 	CardTitle
 } from 'reactstrap';
 import Alert from 'react-bootstrap/Alert'
+
 // import { BsArrow90DegUp }  from "react-icons/bs";
 // import { FaSignInAlt } from "react-icons/fa";
 // import { FiAlertCircle } from "react-icons/fi";
@@ -61,8 +62,8 @@ function LoginForm({ login }) {
   }
 
   return (
-    <section className="col-md-6 col-lg-4 offset-md-3 offset-lg-4">
-      <Card className="J">
+    <section className="col-md-6 col-lg-4 offset-md-3 offset-lg-4 p-5">
+      <Card className="bg-secondary">
         <CardBody>
             <CardTitle >
               <h4 className="font-weight-bold text-center text-light">User Login</h4>
@@ -111,6 +112,7 @@ function LoginForm({ login }) {
                   required
                  />
                 </div>
+                <br></br>
                 <Button className="btn btn-outline-info float-left" style={{ color: '#bfe64b' }} onSubmit={handleSubmit} type="Login"> 
                   <h4> Login 
                      {/* <FaSignInAlt /> */}

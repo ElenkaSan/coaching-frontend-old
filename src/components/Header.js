@@ -1,5 +1,4 @@
 import * as React from "react";
-
 // import { useNavigate } from "react-router-dom";
 
 import AppBar from "@mui/material/AppBar";
@@ -98,9 +97,15 @@ export default function Header({ logout }) {
                   <Link href="/login" type="login">
                     <MenuItem onClick={handleClose}>Login</MenuItem>
                   </Link>
-                  <Link href="/" type="logout">
-                    <MenuItem onClick={handleClick}>Logout</MenuItem>
+                  <Link href="/signup" type="signup">
+                    <MenuItem onClick={handleClick}>SignUp</MenuItem>
                   </Link>
+                  <Link href="/profile" type="login">
+                    <MenuItem onClick={handleClose}>Profile</MenuItem>
+                  </Link>
+                  {/* <Link href="/" type="logout">
+                    <MenuItem onClick={handleClick}>Logout</MenuItem>
+                  </Link> */}
                 </Menu>
               </>
             ) : (
@@ -161,6 +166,16 @@ export default function Header({ logout }) {
                 >
                   Signup
                 </Button>
+
+                <Button
+                  component={Link}
+                  href="/profile"
+                  type="profile"
+                  Click={handleClose}
+                >
+                  Profile
+                </Button>
+
                 <Button
                   component={Link}
                   href="/contact"

@@ -100,8 +100,8 @@ const navigate = useNavigate();
           
 
   return (
-    <section className="col-md-6 col-lg-4 offset-md-3 offset-lg-4">
-      <Card className="J" >
+    <section className="col-md-6 col-lg-4 offset-md-3 offset-lg-4 p-5">
+      <Card className="Jbg-secondary" >
         <CardBody>
           <CardTitle className="T font-weight-bold text-center text-info">
             <h3>Update Profile</h3>

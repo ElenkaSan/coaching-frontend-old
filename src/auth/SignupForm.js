@@ -58,8 +58,8 @@ function SignupForm({ signup }) {
   
   
   return (
-    <section className="col-md-6 col-lg-4 offset-md-3 offset-lg-4">
-    <Card className="J" >
+    <section className="col-md-6 col-lg-4 offset-md-3 offset-lg-4 p-5">
+    <Card className="bg-secondary" >
       <CardBody>
         <CardTitle>
           <h4 className="font-weight-bold text-center text-light">Sign Up</h4>
@@ -148,6 +148,7 @@ function SignupForm({ signup }) {
               required
             />
           </div>
+          <br></br>
           <Button to="/" className="btn btn-outline-info float-left" style={{ color: '#bfe64b' }} type="submit" onSubmit={handleSubmit}>
             <h4>
               Submit
